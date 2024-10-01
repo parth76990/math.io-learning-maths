@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Math Question Generator</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div id="basic-questions">
+        <h1>Random Math Question Generator</h1>
+        <div id="question"></div>
+        <input type="text" id="answer-box" placeholder="Your answer">
+        <button onclick="checkAnswer()">Submit Answer</button>
+        <div id="feedback"></div>
+        <div id="score">Score: 0</div>
+    </div>
+
+    <div id="caseQuestions" style="display: none;">
+        <h2>Real Life Case-Based Questions</h2>
+        <div id="case-question"></div>
+        <input type="text" id="case-answer-box" placeholder="Your answer">
+        <button id="case-submit-button" onclick="checkCaseAnswer()">Submit Answer</button>
+        <div id="case-feedback"></div>
+        <button id="next-button" onclick="displayCaseQuestion()" style="display: none;">Next</button>
+        <button id="speak-button" onclick="speakQuestion()" style="display: none;">Speak</button>
+    </div>
+
+    <script src="java.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
